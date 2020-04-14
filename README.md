@@ -45,7 +45,7 @@ from covidmx import CovidMX
 latest_published_data = CovidMX(source='Serendipia').get_data()
 ```
 
-By default `CovidMX` instances a `Serendipia` class, searches the latest published data for both confirmed and suspects individuals and finally clean the data. Nevertheless, a more specific search can be conducted (see docs for details).
+By default `CovidMX` instantiates a `Serendipia` class, searches the latest published data for both confirmed and suspect individuals and finally cleans the data. Nevertheless, a more specific search can be conducted (see docs for details).
 
 ```python
 raw_data = CovidMX(source='Serendipia', clean=False).get_data()
